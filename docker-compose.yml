@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    mariadb:
+        image: mariadb:latest
+        container_name: mariadb_microblog
+        ports: 
+            - 3306:3306
+        volumes:
+            - ~/Documents/microblog/mariadb_data:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: microblog_db
+            MYSQL_USER: admin_user
+            MYSQL_PASSWORD: password1
