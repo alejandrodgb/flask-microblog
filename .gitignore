@@ -38,6 +38,10 @@ nosetests.xml
 .project
 .pydevproject
 
+# Other
 venv
 app.db
 microblog.log*
+
+# Visual Studio Code
+settings.json
